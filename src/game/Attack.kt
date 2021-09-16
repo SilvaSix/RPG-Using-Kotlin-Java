@@ -3,6 +3,8 @@ package game
 import Mobs.Enemy
 import java.util.concurrent.TimeUnit
 
+// I am not using this class.  It is currently used as a reference for the combat class.
+
 
 class Attack {
     //for future methods like if dodge do this if hit have a chance to do this
