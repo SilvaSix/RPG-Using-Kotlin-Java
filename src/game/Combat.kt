@@ -47,7 +47,7 @@ class Combat {
             if(newPlayer.hitPoints!! > 0 && newEnemy.hitPoints!! > 0) {
                 var thirdRandom20: Int = (0..20).random()
                 var forthRandom20: Int = (0..20).random()
-                playerDefense = newPlayer.defense!! +thirdRandom20
+                playerDefense = newPlayer.defense!! + thirdRandom20
                 enemyAttack = newEnemy.accuracy!! + forthRandom20
                 if(enemyAttack >= playerDefense) {
                     playerDefendedSuccessfully = false
@@ -55,7 +55,7 @@ class Combat {
                     println(newPlayer.name + " hit-points before the hit " + newPlayer.hitPoints)
                     newPlayer.hitPoints = newPlayer.hitPoints!! - newEnemy.damageOut!!
                     println("You have been hit, aghhh!!!")
-                    println(ANSI_YELLOW  + "You have been hit for: " + newEnemy.damageOut + ANSI_PURPLE +"  Your health is now " +newPlayer.hitPoints + "!"  + ANSI_RESET)
+                    println(ANSI_YELLOW  + "You have been hit for: " + newEnemy.damageOut + ANSI_PURPLE + "  Your health is now " + newPlayer.hitPoints + "!"  + ANSI_RESET)
                 }else {
                     playerDefendedSuccessfully = true
                     enemyAttackedSuccessfully = false

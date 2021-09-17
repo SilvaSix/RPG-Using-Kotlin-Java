@@ -1,0 +1,4 @@
+package names
+
+class Names {
+}

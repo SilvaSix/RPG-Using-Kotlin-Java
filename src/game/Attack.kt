@@ -14,7 +14,7 @@ class Attack {
     private var enemyDefendedSuccessfully = true
 
     //added while loop if enemy is alive to keep fight going until enemy is dead
-    //add an option to run away if requested
+
     //attack method and damage method
     //add an option to run away if requested
 
@@ -51,7 +51,7 @@ class Attack {
         while(newPlayer.hitPoints!! > 0) {
             var random20: Int = (0..20).random()
             var secondRandom20: Int = (0..20).random()
-            playerDefense = newPlayer.defense!! +random20
+            playerDefense = newPlayer.defense!! + random20
             enemyAttack = newEnemy.accuracy!! + secondRandom20
             if(enemyAttack >= playerDefense) {
                 playerDefendedSuccessfully = false
