@@ -1,16 +1,21 @@
-package Mobs
+package mobs
 
-import Mobs.Enemy
+import names.NPCNames
 
-class Zombie() : Enemy() {
-    private var _name = "Zombie Boy"
-    private var _hitPoints = 150
+val npcNames = NPCNames()
+open class Enemy() {
+    private var _name = npcNames.randomNpcName()
+    private var _hitPoints = 100
     private var _accuracy = 100
     private var _defense = 100
-    private var _damageOut = 7
+    private var _damageOut = 10
     private var _alive = true
 
-    override var name: String?
+    open fun angryTaunt(){
+        println("I am $name, I will defeat you... Player!!!")
+    }
+
+    open var name: String?
         get() {
             return _name
         }
@@ -20,7 +25,7 @@ class Zombie() : Enemy() {
             }
         }
 
-    override var hitPoints: Int?
+    open var hitPoints: Int?
         get() {
             return _hitPoints
         }
@@ -30,7 +35,7 @@ class Zombie() : Enemy() {
             }
         }
 
-    override var accuracy: Int?
+    open var accuracy: Int?
         get() {
             return _accuracy
         }
@@ -40,7 +45,7 @@ class Zombie() : Enemy() {
             }
         }
 
-    override var defense: Int?
+    open var defense: Int?
         get() {
             return _defense
         }
@@ -50,7 +55,7 @@ class Zombie() : Enemy() {
             }
         }
 
-    override var damageOut: Int?
+    open var damageOut: Int?
         get() {
             return _damageOut
         }
@@ -60,7 +65,7 @@ class Zombie() : Enemy() {
             }
         }
 
-    override var alive: Boolean?
+    open var alive: Boolean?
         get() {
             return _alive
         }
@@ -72,3 +77,7 @@ class Zombie() : Enemy() {
         }
 
 }
+
+
+
+

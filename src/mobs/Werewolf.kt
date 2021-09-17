@@ -1,10 +1,8 @@
-package Mobs
+package mobs
 
-import Mobs.Enemy
-
-class Orc() : Enemy() {
-    private var _name = "Mobs.Orc Man"
-    private var _hitPoints = 50
+class Werewolf() : Enemy() {
+    private var _name = npcNames.randomNpcName()
+    private var _hitPoints = 300
     private var _accuracy = 100
     private var _defense = 100
     private var _damageOut = 10
@@ -70,4 +68,5 @@ class Orc() : Enemy() {
             }
 
         }
+
 }

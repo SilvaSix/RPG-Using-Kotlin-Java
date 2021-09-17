@@ -1,6 +1,6 @@
 package game
 
-import Mobs.Enemy
+import mobs.Enemy
 import java.util.concurrent.TimeUnit
 
 class Combat {

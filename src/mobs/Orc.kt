@@ -1,9 +1,7 @@
-package Mobs
+package mobs
 
-import Mobs.Enemy
-
-class Troll() : Enemy() {
-    private var _name = "A Giant Mobs.Troll"
+class Orc() : Enemy() {
+    private var _name = npcNames.randomNpcName()
     private var _hitPoints = 50
     private var _accuracy = 100
     private var _defense = 100

@@ -1,18 +1,14 @@
-package Mobs
+package mobs
 
-open class Enemy() {
-    private var _name = "Mob Name"
-    private var _hitPoints = 100
-    private var _accuracy = 100
-    private var _defense = 100
-    private var _damageOut = 10
+class Spider() : Enemy() {
+    private var _name = npcNames.randomNpcName()
+    private var _hitPoints = 50
+    private var _accuracy = 110
+    private var _defense = 85
+    private var _damageOut = 15
     private var _alive = true
 
-    open fun angryTaunt(){
-        println("I am $name, I will defeat you... Player!!!")
-    }
-
-    open var name: String?
+    override var name: String?
         get() {
             return _name
         }
@@ -22,7 +18,7 @@ open class Enemy() {
             }
         }
 
-    open var hitPoints: Int?
+    override var hitPoints: Int?
         get() {
             return _hitPoints
         }
@@ -32,7 +28,7 @@ open class Enemy() {
             }
         }
 
-    open var accuracy: Int?
+    override var accuracy: Int?
         get() {
             return _accuracy
         }
@@ -42,7 +38,7 @@ open class Enemy() {
             }
         }
 
-    open var defense: Int?
+    override var defense: Int?
         get() {
             return _defense
         }
@@ -52,7 +48,7 @@ open class Enemy() {
             }
         }
 
-    open var damageOut: Int?
+    override var damageOut: Int?
         get() {
             return _damageOut
         }
@@ -62,7 +58,7 @@ open class Enemy() {
             }
         }
 
-    open var alive: Boolean?
+    override var alive: Boolean?
         get() {
             return _alive
         }
@@ -72,9 +68,4 @@ open class Enemy() {
             }
 
         }
-
 }
-
-
-
-

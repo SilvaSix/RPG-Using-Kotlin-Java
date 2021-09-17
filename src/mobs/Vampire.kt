@@ -1,13 +1,11 @@
-package Mobs
+package mobs
 
-import Mobs.Enemy
-
-class Spider() : Enemy() {
-    private var _name = "SpiderMan"
-    private var _hitPoints = 50
-    private var _accuracy = 110
-    private var _defense = 85
-    private var _damageOut = 15
+class Vampire(): Enemy() {
+    private var _name = npcNames.randomNpcName()
+    private var _hitPoints = 200
+    private var _accuracy = 100
+    private var _defense = 100
+    private var _damageOut = 10
     private var _alive = true
 
     override var name: String?
@@ -70,4 +68,5 @@ class Spider() : Enemy() {
             }
 
         }
+
 }

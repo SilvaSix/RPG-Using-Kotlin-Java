@@ -1,13 +1,14 @@
-package Mobs
+package mobs
 
-import Mobs.Enemy
+import names.NPCNames
 
-class Vampire(): Enemy() {
-    private var _name = "Mobs.Vampire batty"
-    private var _hitPoints = 200
+
+class Zombie() : Enemy() {
+    private var _name = npcNames.randomNpcName()
+    private var _hitPoints = 150
     private var _accuracy = 100
     private var _defense = 100
-    private var _damageOut = 10
+    private var _damageOut = 7
     private var _alive = true
 
     override var name: String?
