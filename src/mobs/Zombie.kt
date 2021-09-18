@@ -1,8 +1,5 @@
 package mobs
 
-import names.NPCNames
-
-
 class Zombie() : Enemy() {
     private var _name = npcNames.randomNpcName()
     private var _hitPoints = 150

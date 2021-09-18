@@ -200,8 +200,15 @@ class NPCNames {
             "Ayla",
             "Ava",
             "Valaire",
-            "Rve",
-            "Spence"
+            "Eve",
+            "Spence" ,
+            "Timmy" ,
+            "Bobby" ,
+            "Billy Bob" ,
+            "Jones" ,
+            "Karen" ,
+            "Scooter",
+            "DaBaby"
             )
 
 
