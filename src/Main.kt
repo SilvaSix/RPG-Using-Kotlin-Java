@@ -1,9 +1,8 @@
 import mobs.*
 
 import game.Combat
-import game.Locations
+import game.locations.Locations
 import game.Player
-import names.NPCNames
 
 fun main(){
     val newCombat = Combat()
