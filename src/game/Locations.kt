@@ -1,12 +1,21 @@
 package game
 
 class Locations {
-    var listOfLocations = listOf<String>("Test1" ,
-        "test2" ,
-        "test3" ,
-        "test4" ,
-        "test5" ,
-        "test6"
+    var listOfLocations = listOf<String>(
+        //infested badlands are for zombies, maybe percentage of types of enemies
+        "Infested Badlands",
+        //great for bandits
+        "Hideout",
+        //great for spiders
+        "grassland or deserts",
+        //orcs live here
+        "Underground caves",
+        //trolls live here
+        "Mountains",
+        //where vampires live
+        "Catacombs",
+        //where the werewolves live
+        "Transdanubia"
     )
 
     fun randomLocation(): String {
