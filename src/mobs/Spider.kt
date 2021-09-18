@@ -1,14 +1,14 @@
 package mobs
 
 class Spider() : Enemy() {
-    private var _name = npcNames.randomNpcName()
+    //private var _name = npcNames.randomNpcName()
     private var _hitPoints = 50
     private var _accuracy = 110
     private var _defense = 85
     private var _damageOut = 15
     private var _alive = true
 
-    override var name: String?
+    /*override var name: String?
         get() {
             return _name
         }
@@ -17,6 +17,8 @@ class Spider() : Enemy() {
                 _name = value
             }
         }
+
+     */
 
     override var hitPoints: Int?
         get() {

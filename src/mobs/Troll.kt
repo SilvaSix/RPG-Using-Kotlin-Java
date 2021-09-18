@@ -1,14 +1,14 @@
 package mobs
 
 class Troll() : Enemy() {
-    private var _name = npcNames.randomNpcName()
+    //private var _name = npcNames.randomNpcName()
     private var _hitPoints = 50
     private var _accuracy = 100
     private var _defense = 100
     private var _damageOut = 10
     private var _alive = true
 
-    override var name: String?
+    /*override var name: String?
         get() {
             return _name
         }
@@ -17,6 +17,8 @@ class Troll() : Enemy() {
                 _name = value
             }
         }
+
+     */
 
     override var hitPoints: Int?
         get() {
