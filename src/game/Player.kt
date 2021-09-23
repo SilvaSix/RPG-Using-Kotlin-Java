@@ -7,6 +7,7 @@ class Player() {
     private var _defense = 100
     private var _damageOut = 10
     private var _alive = true
+    private var _energy = 100
 
 
     open fun angryTaunt(){
@@ -72,6 +73,16 @@ class Player() {
                 _alive = value
             }
 
+        }
+
+    open var energy: Int?
+        get() {
+            return _energy
+        }
+        set(value) {
+            if (value != null) {
+                _energy = value
+            }
         }
 
 }

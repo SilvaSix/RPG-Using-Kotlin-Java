@@ -7,18 +7,7 @@ class Orc() : Enemy() {
     private var _defense = 100
     private var _damageOut = 10
     private var _alive = true
-
-    /*override var name: String?
-        get() {
-            return _name
-        }
-        set(value) {
-            if (value != null) {
-                _name = value
-            }
-        }
-
-     */
+    private var _energy = 100
 
     override var hitPoints: Int?
         get() {
@@ -69,5 +58,15 @@ class Orc() : Enemy() {
                 _alive = value
             }
 
+        }
+
+    override var energy: Int?
+        get() {
+            return _energy
+        }
+        set(value) {
+            if (value != null) {
+                _energy = value
+            }
         }
 }
