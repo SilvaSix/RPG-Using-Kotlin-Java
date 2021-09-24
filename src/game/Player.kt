@@ -1,8 +1,11 @@
 package game
 
+import mobs.Enemy
+
 class Player() {
     private var _name = "Knight Silva"
-    private var _hitPoints = 100
+    private var _hitPoints = 55
+    private var _maxHitPoints = 100
     private var _accuracy = 100
     private var _defense = 100
     private var _damageOut = 10
@@ -82,6 +85,16 @@ class Player() {
         set(value) {
             if (value != null) {
                 _energy = value
+            }
+        }
+
+    open var maxHitPoints: Int?
+        get() {
+            return _maxHitPoints
+        }
+        set(value) {
+            if (value != null) {
+                _maxHitPoints = value
             }
         }
 
