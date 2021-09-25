@@ -15,5 +15,6 @@ fun main(){
     var newSpider = Spider()
     var locationChooser = Locations()
     var newRest = Rest()
+    newRest.playerRest(newPlayer)
 
 }
